@@ -5,7 +5,7 @@ from flask import Flask, request, render_template
 import openai
 
 app = Flask(__name__)
-openai.api_key = "YOUR_API_KEY"
+openai.api_key = "sk-jBO5Cjlq_34X_idpaHdqgwlMsqbjVGjO51657q0NieT3BlbkFJTVuEPIuGEwW2pkULKzatuq8R0NqA4iSxQ4qJZTwjEA"
 
 def generate_report(diagnosis):
   prompt = f"Buat laporan pendahuluan asuhan keperawatan untuk pasien dengan diagnosis {diagnosis}. Laporan harus mengikuti sistematika penulisan yang lengkap, termasuk bab pendahuluan, tinjauan teoritis, dan rencana asuhan keperawatan. Fokus pada konsep dasar medis dan keperawatan yang relevan."
